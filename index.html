@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Интерактивный путеводитель по ДВГУПС</title>
+    <link rel="preload" href="fonts/ubuntu-regular.woff2" as="font">
+    <link rel="preload" href="fonts/ubuntu-bold.woff2" as="font">
+    <link rel="preload" href="fonts/ubuntu-light.woff2" as="font">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header class="page-header">
+      <p class="page-header__text page-header__text--mobile">&lt; ФГБОУ_ВО_ДВГУПС &gt;</p>
+      <p class="page-header__text page-header__text--tablet">&lt; Дальневосточный_государственный_университет_путей_сообщения &gt;</p>
+      <div class="page-header__logo">
+        <img class="page-header__img" width="33" height="22" src="img/logo-guide.svg" alt="Логотип интерактивного путеводителя">
+      </div>
+      <nav class="main-nav">
+        <ul class="site-list">
+          <li class="site-list__item site-list__item--map">
+            <a href="#map">
+              <span class="site-list__link-mobile">Интерактивная карта</span>
+              <span class="site-list__link-tablet">Карта</span>
+            </a>
+          </li>
+          <li class="site-list__item site-list__item--virtual">
+            <a href="#tour">
+              <span class="site-list__link-mobile">Виртуальный тур</span>
+              <span class="site-list__link-tablet">Тур</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <div class="about-wrapper">
+        <section class="about">
+          <div class="about__header-block">
+            <h1 class="about__header">Интерактивный путеводитель<br> по университету</h1>
+          </div>
+          <div class="about__slogan-block"></div>
+          <p class="about__slogan">“Лучше один раз увидеть,<br>&ensp;чем сто раз услышать”</p>
+        </section>
+      </div>
+
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества интерактивного путеводителя</h2>
+
+        <div class="advantages__decor-block"></div>
+        <p class="advantages__text">
+          Интерактивная карта<br>главного корпуса<br class="advantages__br-desktop"> в сочетании с
+          виртуальным туром – это уникальная возможность<br class="advantages__br-desktop"> получить максимально
+          полное представление об<br class="advantages__br-mobile"> учебном заведении.
+        </p>
+      </section>
+
+      <section class="interactive-map" id="map">
+        <h2 class="interactive-map__title">интерактивная<br>карта</h2>
+
+        <input class="interactive-map__switch interactive-map-radio-1" type="radio" name="price" id="settings-area-1">
+        <input class="interactive-map__switch interactive-map-radio-2" type="radio" name="price" id="settings-area-2" checked>
+        <input class="interactive-map__switch interactive-map-radio-3" type="radio" name="price" id="settings-area-3">
+
+        <div class="interactive-map__settings-floor settings-floor">
+          <ul class="settings-floor__list">
+            <li class="settings-floor__item settings-floor__item_1" tabindex="0">-1 этаж</li>
+            <li class="settings-floor__item settings-floor__item1 settings-floor__item--active" tabindex="0">1 этаж</li>
+            <li class="settings-floor__item settings-floor__item2" tabindex="0">2 этаж</li>
+            <li class="settings-floor__item settings-floor__item3" tabindex="0">3 этаж</li>
+            <li class="settings-floor__item settings-floor__item4" tabindex="0">4 этаж</li>
+          </ul>
+        </div>
+
+        <img class="interactive-map__content-main-img" src="img/parts_map/university1.png" alt="Университет ДВГУПС">
+
+        <div class="interactive-map__content">
+          <div class="interactive-map__content-line interactive-map__content-line--floor-1 hidden">
+            <div class="interactive-map__img">
+              <div class="interactive-map__description">
+                <p class="interactive-map__description-head"></p>
+                <p class="interactive-map__description-main"></p>
+              </div>
+              <img src="img/parts_map/left--1.png" alt="-1 этаж левое крыло">
+            </div>
+
+            <div class="interactive-map__img">
+              <div class="interactive-map__description">
+                <p class="interactive-map__description-head"></p>
+                <p class="interactive-map__description-main"></p>
+              </div>
+              <img src="img/parts_map/center--1.png" alt="-1 этаж центральная часть">
+            </div>
+
+            <div class="interactive-map__img">
+              <div class="interactive-map__description">
+                <p class="interactive-map__description-head"></p>
+                <p class="interactive-map__description-main"></p>
+              </div>
+              <img src="img/parts_map/right--1.png" alt="Здесь, к сожалению, ничего нет">
+            </div>
+          </div>
+
+          <div class="interactive-map__content-line interactive-map__content-line--floor1 opacity">
+            <div class="interactive-map__img">
+              <div class="interactive-map__description">
+                <p class="interactive-map__description-head"></p>
+                <p class="interactive-map__description-main"></p>
+              </div>
+              <img src="img/parts_map/left-1.png" alt="1 этаж левое крыло">
+            </div>
+
+            <div class="interactive-map__img">
+              <div class="interactive-map__description">
+                <p class="interactive-map__description-head"></p>
+                <p class="interactive-map__description-main"></p>
+              </div>
+              <img src="img/parts_map/center-1.png" alt="1 этаж центральная часть">
+            </div>
+
+            <div class="interactive-map__img">
+              <div class="interactive-map__description">
+                <p class="interactive-map__description-head"></p>
+                <p class="interactive-map__description-main"></p>
+              </div>
+              <svg class="interactive-map__svg" viewBox="0 0 1950 1080">
+                <a href="#tour_nodes">
+                  <path class="interactive-map__path" d="m 1519.5888,118.47039 121.2336,27.26152 -60.9375,130.85526 -120.5921,-27.58224 z" fill="#ef4319"
+                  head-data="145"
+                  description-data="Лаборатория современных транспортных технологий и систем имени профессора, доктора технических наук Виктора Григорьевича Григоренко"></path>
+                </a>
+              </svg>
+              <img src="img/parts_map/right-1.png" alt="1 этаж правое крыло">
+            </div>
+          </div>
+
+          <div class="interactive-map__content-line interactive-map__content-line--floor2 hidden">
+            <div class="interactive-map__img">
+              <div class="interactive-map__description">
+                <p class="interactive-map__description-head"></p>
+                <p class="interactive-map__description-main"></p>
+              </div>
+              <img src="img/parts_map/left-2.png" alt="2 этаж левое крыло">
+            </div>
+
+            <div class="interactive-map__img">
+              <div class="interactive-map__description">
+                <p class="interactive-map__description-head"></p>
+                <p class="interactive-map__description-main"></p>
+              </div>
+              <img src="img/parts_map/center-2.png" alt="2 этаж центральная часть">
+            </div>
+
+            <div class="interactive-map__img">
+              <div class="interactive-map__description">
+                <p class="interactive-map__description-head"></p>
+                <p class="interactive-map__description-main"></p>
+              </div>
+              <svg class="interactive-map__svg" viewBox="0 0 1950 1080">
+                <a href="#tour_nodes">
+                  <path class="interactive-map__path" d="m 1514.6109,735.17689 129.9056,29.92924 -41.3915,91.69812 -129.9057,-29.29246 z" fill="#ef4319"
+                  head-data="236а"
+                  description-data="Студенческое научное конструкторское бюро 'Решение проблем 3d-печати конструкций сложных форм'"></path>
+                </a>
+              </svg>
+              <img src="img/parts_map/right-2.png" alt="2 этаж правое крыло">
+            </div>
+          </div>
+
+          <div class="interactive-map__content-line interactive-map__content-line--floor3 hidden">
+            <div class="interactive-map__img">
+              <div class="interactive-map__description">
+                <p class="interactive-map__description-head"></p>
+                <p class="interactive-map__description-main"></p>
+              </div>
+              <img src="img/parts_map/left-3.png" alt="3 этаж левое крыло">
+            </div>
+
+            <div class="interactive-map__img">
+              <div class="interactive-map__description">
+                <p class="interactive-map__description-head"></p>
+                <p class="interactive-map__description-main"></p>
+              </div>
+              <img src="img/parts_map/center-3.png" alt="3 этаж центральная часть">
+            </div>
+
+            <div class="interactive-map__img">
+              <div class="interactive-map__description">
+                <p class="interactive-map__description-head"></p>
+                <p class="interactive-map__description-main"></p>
+              </div>
+              <img src="img/parts_map/right-3.png" alt="3 этаж правое крыло">
+            </div>
+          </div>
+
+          <div class="interactive-map__content-line interactive-map__content-line--floor4 hidden">
+            <div class="interactive-map__img">
+              <div class="interactive-map__description">
+                <p class="interactive-map__description-head"></p>
+                <p class="interactive-map__description-main"></p>
+              </div>
+              <img src="img/parts_map/left-4.png" alt="4 этаж левое крыло">
+            </div>
+
+            <div class="interactive-map__img">
+              <div class="interactive-map__description">
+                <p class="interactive-map__description-head"></p>
+                <p class="interactive-map__description-main"></p>
+              </div>
+              <img src="img/parts_map/center-4.png" alt="4 этаж центральная часть">
+            </div>
+
+            <div class="interactive-map__img">
+              <div class="interactive-map__description">
+                <p class="interactive-map__description-head"></p>
+                <p class="interactive-map__description-main"></p>
+              </div>
+              <svg class="interactive-map__svg" viewBox="0 0 1950 1080">
+                <a href="#tour_nodes">
+                  <path class="interactive-map__path" d="m 663.85613,506.88679 261.08491,61.13208 -35.97877,79.59905 -262.0401,-61.45047 z" fill="#ef4319"
+                  head-data="433"
+                  description-data="Лаборатория систем автоматизированного проектирования"></path>
+                </a>
+                <a href="#tour_nodes">
+                  <path class="interactive-map__path" d="m 1445.2005,326.99292 123.2193,28.97406 -41.7099,91.69811 -124.4929,-28.97405 z" fill="#ef4319"
+                  head-data="439"
+                  description-data="Кабинет кафедры 'Вычислительная техника и компьютерная графика'"></path>
+                </a>
+                <a href="#tour_nodes">
+                  <path class="interactive-map__path" d="m 1687.1816,341.32075 130.2241,30.56604 -87.8774,189.12736 -129.9057,-30.88443 z" fill="#ef4319"
+                  head-data="426"
+                  description-data="Кабинет начертательной геометрии и инженерной графики"></path>
+                </a>
+              </svg>
+              <img src="img/parts_map/right-4.png" alt="4 этаж правое крыло">
+            </div>
+          </div>
+        </div>
+
+        <div class="interactive-map__settings-area settings-area">
+          <label class="settings-area__item settings-area__item-left" for="settings-area-1" tabindex="0">Левое крыло</label>
+          <label class="settings-area__item settings-area__item-center settings-area__item--selected" for="settings-area-2" tabindex="0">Центральная часть</label>
+          <label class="settings-area__item settings-area__item-right" for="settings-area-3" tabindex="0">Правое крыло</label>
+        </div>
+      </section>
+
+      <section class="tour">
+        <h2 class="tour__title" id="tour">виртуальный<br>тур</h2>
+
+        <div class="tour__iframe-wrapper">
+          <iframe class="tour__iframe" id="tour_nodes" src="tour/output/index.html#node1" width="100%" height="160" frameborder="0">
+            Ваш браузер не поддерживает встроенные фреймы!
+          </iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p class="page-footer__address">
+        г. Хабаровск,<br>ул. Серышева, 47,<br>тел.: 40-72-00
+      </p>
+
+      <div class="page-footer__links">
+        <a class="page-footer__links-journal" href="http://moydvgups.ru/">
+          <span class="visually-hidden">Сайт Мой ДВГУПС</span>
+        </a>
+        <a class="page-footer__links-university" href="http://www.dvgups.ru/">
+          <span class="visually-hidden">Сайт ДВГУПС</span>
+        </a>
+      </div>
+
+      <div class="page-footer__end-tag">
+        <p class="page-footer__end-tag-text">&lt;/&gt;</p>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
